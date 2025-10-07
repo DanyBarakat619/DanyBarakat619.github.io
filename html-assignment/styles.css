@@ -1,1 +1,49 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
 
+header
+footer {
+    background: #f2f4f7;
+    padding: 16px;
+}
+
+.site-title {
+    color: #0b63c7;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px #000;
+}
+
+.hobbies {
+    list-style-type: square;
+    padding-left: 1.2rem;
+}
+.hobbies li:nth-child(odd) {
+    background: #f8fafc;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   gap: 12px; 
+}
+nav a {
+    text-decoration: none;
+    background: #04f56c;
+    border: 1px solid #f17d09;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #0b3d91;
+}
+nav a:hover,
+nav a:focus {
+    background: #0a60f5;
+    outline: none;
+}
