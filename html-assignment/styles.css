@@ -7,7 +7,7 @@ body {
 
 header
 footer {
-    background: #f2f4f7;
+    background: #0463f3;
     padding: 16px;
 }
 
@@ -24,7 +24,7 @@ footer {
     padding-left: 1.2rem;
 }
 .hobbies li:nth-child(odd) {
-    background: #f8fafc;
+    background: #047af1;
 }
 
 nav ul {
