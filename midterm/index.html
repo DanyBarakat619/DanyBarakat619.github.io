@@ -1,85 +1,48 @@
 <!doctype html>
-*{box-sizing:border-box}
-html,body{margin:0}
-body{
-background:var(--bg);
-color:var(--text);
-font-family: -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-line-height:1.5;
-}
-img{max-width:100%;display:block}
 
 
-/* =============================
-Header with image + centered title
-============================= */
-.site-header{position:relative}
-.header-img{width:100%;height:auto;display:block}
-.site-title{
-position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);
-margin:0;color:white;font-weight:700;font-size:clamp(28px,6vw,64px);
-text-shadow:0 2px 8px rgba(0,0,0,.35);
-}
+<div class="field">
+<label for="email">Your Email</label>
+<input id="email" name="email" type="email" required>
+</div>
 
 
-/* =============================
-Nav with dividers
-============================= */
-.site-nav{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;justify-content:center;gap:40px;border-top:1px solid var(--text);border-bottom:1px solid var(--text)}
-.tabs a{position:relative;color:var(--text);text-decoration:none;font-weight:700;letter-spacing:.5px}
-.tabs a:not(:last-child){padding-right:40px}
-.tabs a:not(:last-child)::after{content:"";position:absolute;right:18px;top:0;bottom:0;width:1px;background:var(--text);opacity:.7}
-.tabs a:hover{text-decoration:underline}
+<div class="field">
+<label for="message">Your Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
 
 
-/* =============================
-Layout containers
-============================= */
-main, .site-footer{max-width:1100px;margin:0 auto;padding:16px}
+<fieldset class="field radios">
+<legend>Would you like to visit the starfish?</legend>
+<div class="radio-row">
+<input type="radio" id="visit-yes" name="visit" value="yes">
+<label for="visit-yes">Yes</label>
 
 
-/* =============================
-Article (image wraps text)
-============================= */
-.content-article{padding:20px 0}
-.content-article h2{margin-top:10px}
-.article-img.left{float:left;max-width:220px;margin:0 16px 12px 0;border-radius:4px}
-.content-article::after{content:"";display:block;clear:both}
+<input type="radio" id="visit-no" name="visit" value="no">
+<label for="visit-no">No</label>
 
 
-/* =============================
-Facts list
-============================= */
-.facts ul{list-style:disc inside;margin:0;padding:0}
-.facts li{margin:.35rem 0}
+<input type="radio" id="visit-maybe" name="visit" value="maybe">
+<label for="visit-maybe">Maybe</label>
+</div>
+</fieldset>
 
 
-/* =============================
-Contact form box + labels linked
-============================= */
-.contact h2{margin:16px 0}
-.boxed{background:var(--box);border:2px solid var(--text);padding:12px}
-.field{display:flex;flex-direction:column;gap:.25rem;margin-bottom:.8rem}
-label{font-size:.95rem}
-input,textarea{width:100%;padding:.5rem;border:1px solid var(--line);border-radius:2px;background:#fff;color:#000}
-textarea{resize:vertical}
-.radios legend{margin-bottom:.4rem}
-.radio-row{display:flex;align-items:center;gap:.6rem}
-.btn.light{background:#ddd;border:1px solid #aaa;color:#222;padding:.4rem .7rem;border-radius:2px;cursor:pointer}
-.btn.light:hover{filter:brightness(1.05)}
+<button type="submit">SEND</button>
+</form>
+</section>
+</main>
 
 
-/* =============================
-Footer
-============================= */
-.site-footer{padding-bottom:30px}
+<footer class="site-footer">
+<p>© <span id="year"></span> Your Name</p>
+</footer>
 
 
-/* =============================
-Responsive tweaks
-============================= */
-@media (max-width:720px){
-.article-img.left{float:none;max-width:100%;margin:0 0 12px 0}
-.tabs a:not(:last-child){padding-right:24px}
-.tabs a:not(:last-child)::after{right:10px}
-}
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
