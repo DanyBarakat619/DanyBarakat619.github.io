@@ -13,9 +13,9 @@
   </header>
 
   <nav class="site-nav tabs">
-    <a href="#home">HOME</a>
-    <a href="#story">STORY</a>
-    <a href="#contact">CONTACT</a>
+    <a href="home">HOME</a>
+    <a href="story">STORY</a>
+    <a href="contact">CONTACT</a>
   </nav>
 
   <main id="home">
@@ -75,52 +75,3 @@
   </script>
 </body>
 </html>
-main.css
-css
-Copy code
-:root{
-  --page:#eaf3ff;
-  --title:#ff7a59;
-  --text:#0e1a1d;
-  --navbg:#ffffff;
-  --divider:#7f9094;
-  --box:#eef3f7;
-  --border:#0e1a1d;
-  --btn:#2f7d32;
-  --btntext:#ffffff;
-}
-
-*{box-sizing:border-box}
-body{margin:0;background:var(--page);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-
-.site-header{position:relative}
-.header-img{width:100%;height:auto;display:block}
-.site-title{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);margin:0;color:var(--title);font-weight:700;font-size:clamp(28px,6vw,64px);text-shadow:0 2px 8px rgba(0,0,0,.35)}
-
-.site-nav{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;justify-content:center;gap:40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--navbg)}
-.tabs a{position:relative;text-decoration:none;color:var(--text);font-weight:700;letter-spacing:.5px}
-.tabs a:not(:last-child){padding-right:40px}
-.tabs a:not(:last-child)::after{content:"";position:absolute;right:18px;top:0;bottom:0;width:1px;background:var(--divider)}
-
-main,.site-footer{max-width:1100px;margin:0 auto;padding:16px}
-
-.content-article{padding:20px 0}
-.content-article h2{margin:10px 0}
-.article-img.left{float:left;max-width:220px;margin:0 16px 12px 0;border-radius:4px}
-.content-article::after{content:"";display:block;clear:both}
-
-.facts ul{list-style:disc inside;margin:0;padding:0}
-
-.contact h2{margin:16px 0}
-.boxed{background:var(--box);border:2px solid var(--border);padding:12px}
-.field{display:flex;flex-direction:column;margin-bottom:12px}
-label{font-size:.95rem}
-input,textarea{width:100%;padding:.5rem;border:1px solid #c8d2d6;border-radius:2px;background:#fff;color:#000}
-textarea{resize:vertical}
-.radios legend{margin-bottom:.4rem}
-.radio-row{display:flex;align-items:center;gap:10px}
-
-button{padding:6px 12px;border:1px solid #1e5220;background:var(--btn);color:var(--btntext);font-weight:700;cursor:pointer}
-button:hover{filter:brightness(1.08)}
-
-.site-footer{padding-bottom:30px;text-align:left}
