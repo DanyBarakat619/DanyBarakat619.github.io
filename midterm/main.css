@@ -22,25 +22,26 @@ h1 {
   margin: 20px 0;
 }
 
-nav ul {
+/* Navigation */
+nav {
   display: flex;
   justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  gap: 40px; /* spacing between links */
+  margin: 20px 0;
 }
 
-nav ul li {
-  margin: 0 60px;
-  padding: 10px 0;
+nav a {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  border-right: 1px solid #000;
+  padding: 0 20px;
+  border-right: 1px solid #000; /* divider line */
 }
 
-nav ul li:last-child {
-  border-right: none;
+nav a:last-child {
+  border-right: none; /* remove line after last item */
+}
+
 }
 
 main {
