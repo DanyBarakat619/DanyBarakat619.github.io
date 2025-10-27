@@ -15,7 +15,7 @@ body{margin:0;background:var(--page);color:var(--text);font-family:Arial,Helveti
 
 .site-header{position:relative}
 .header-img{width:100%;height:auto;display:block}
-.site-title{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);margin:0;color:var(--title);font-weight:700;font-size:clamp(28px,6vw,64px);text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.site-title{position:absolute;left:50%;top:30%;transform:translate(-50%,-50%);margin:0;color:var(--title);font-weight:700;font-size:56px;text-shadow:0 2px 8px rgba(0,0,0,.35)}
 
 .site-nav{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;justify-content:center;gap:40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--navbg)}
 .tabs a{position:relative;text-decoration:none;color:var(--text);font-weight:700;letter-spacing:.5px}
@@ -26,7 +26,7 @@ main,.site-footer{max-width:1100px;margin:0 auto;padding:16px}
 
 .content-article{padding:20px 0}
 .content-article h2{margin:10px 0}
-.article-img.left{float:left;max-width:220px;margin:0 16px 12px 0;border-radius:4px}
+.article-img.left{float:left;max-width:220px;margin:0 16px 12px 0}
 .content-article::after{content:"";display:block;clear:both}
 
 .facts ul{list-style:disc inside;margin:0;padding:0}
@@ -35,7 +35,7 @@ main,.site-footer{max-width:1100px;margin:0 auto;padding:16px}
 .boxed{background:var(--box);border:2px solid var(--border);padding:12px}
 .field{display:flex;flex-direction:column;margin-bottom:12px}
 label{font-size:.95rem}
-input,textarea{width:100%;padding:.5rem;border:1px solid #c8d2d6;border-radius:2px;background:#fff;color:#000}
+input,textarea{width:100%;padding:.5rem;border:1px solid #c8d2d6;background:#fff;color:#000}
 textarea{resize:vertical}
 .radios legend{margin-bottom:.4rem}
 .radio-row{display:flex;align-items:center;gap:10px}
