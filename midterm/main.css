@@ -20,29 +20,28 @@ body {
   line-height: 1.5;
 }
 
-.site-header { position: relative; }
+.site-header { position: relative; margin-bottom: 20px; }
 .header-img { width: 100%; height: auto; display: block; }
 
 .site-title {
   position: absolute;
   left: 50%;
-  top: 22%;           /* moved up so it clears the nav */
+  top: 20%;   /* higher up so it doesn’t overlap nav */
   transform: translate(-50%, -50%);
   margin: 0;
   color: var(--title);
   font-weight: 700;
   font-size: 64px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
 }
 
-/* NAV with reliable divider lines (no pseudo-elements needed) */
+/* NAV with divider lines */
 .site-nav {
   max-width: 1100px;
-  margin: 6px auto 0; /* small gap below the header */
+  margin: 0 auto;
   padding: 10px 16px;
   display: flex;
   justify-content: center;
-  gap: 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--navbg);
@@ -54,9 +53,8 @@ body {
   letter-spacing: .5px;
   padding: 0 24px;
   line-height: 1.4;
-  display: inline-block;
 }
-.tabs a + a { border-left: 1px solid var(--divider); } /* divider lines */
+.tabs a + a { border-left: 1px solid var(--divider); }
 
 main, .site-footer {
   max-width: 960px;
@@ -86,7 +84,7 @@ input, textarea {
 textarea { resize: vertical; }
 
 .radios legend { margin-bottom: .4rem; }
-.radio-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.radio-row { display: flex; align-items: center; gap: 20px; }
 
 button {
   padding: 6px 12px;
