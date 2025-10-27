@@ -22,29 +22,31 @@ h1 {
   margin: 20px 0;
 }
 
-.site-nav{
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 12px 0;
+/* NAVIGATION BAR */
+nav {
   display: flex;
-  justify-content: space-between;   /* spread across */
-  align-items: center;
-  gap: 0;
-  background: transparent;          /* no background strip */
-  border-top: 1px solid var(--border, #324244);
-  border-bottom: 1px solid var(--border, #324244);
+  justify-content: center;      /* center the nav */
+  gap: 60px;                    /* space between links */
+  border-top: 1px solid #000;   /* line above */
+  border-bottom: 1px solid #000;/* line below */
+  padding: 15px 0;
+  background: transparent;      /* no background block */
 }
 
-.site-nav a{
-  text-decoration: none;            /* remove underlines */
-  color: var(--text, #000);
-  font-weight: 700;
-  padding: 0 28px;                  /* spacing around text */
+nav a {
+  text-decoration: none;
+  color: #000;                  /* black text */
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.site-nav a + a{
-  border-left: 1px solid var(--divider, #7f9094);  /* only vertical dividers */
-  padding-left: 28px;
+nav a:visited {
+  color: #000;                  /* stops the purple link color */
+}
+
+nav a + a {
+  border-left: 1px solid #000;  /* dividers between links */
+  padding-left: 60px;
 }
 
 }
