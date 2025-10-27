@@ -20,7 +20,9 @@ body {
   line-height: 1.5;
 }
 
-.site-header { position: relative; }
+.site-header {
+  position: relative;
+}
 
 .header-img {
   width: 100%;
@@ -31,7 +33,7 @@ body {
 .site-title {
   position: absolute;
   left: 50%;
-  top: 26%;
+  top: 26%; /* lifted higher */
   transform: translate(-50%, -50%);
   margin: 0;
   color: var(--title);
@@ -74,12 +76,15 @@ body {
 
 main,
 .site-footer {
-  max-width: 960px;
+  max-width: 960px; /* narrower like the mockup */
   margin: 0 auto;
   padding: 16px;
 }
 
-.content-article { padding: 20px 0; }
+.content-article {
+  padding: 20px 0;
+}
+
 .content-article h2 { margin: 10px 0; }
 
 .article-img.left {
@@ -104,7 +109,7 @@ main,
 
 .boxed {
   background: var(--box);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border); /* thinner border */
   padding: 12px;
 }
 
@@ -132,7 +137,7 @@ textarea { resize: vertical; }
 .radio-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* spread evenly */
   gap: 10px;
 }
 
