@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lone Starfish – Midterm</title>
-  <link rel="stylesheet" href="main.css?v=9">
+  <link rel="stylesheet" href="main.css?v=10">
 </head>
 <body>
   <header class="site-header">
@@ -68,3 +68,114 @@
   </footer>
 </body>
 </html>
+main.css
+css
+Copy code
+:root {
+  --page: #eaf3ff;
+  --title: #ff7a59;
+  --text: #0e1a1d;
+  --navbg: #ffffff;
+  --divider: #7f9094;
+  --box: #e9f0f4;
+  --border: #0e1a1d;
+  --btn: #2f7d32;
+  --btntext: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.site-header { 
+  position: relative;
+  display: block;
+}
+
+.header-img { 
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.site-title {
+  position: absolute;
+  left: 50%;
+  top: 30%;        /* higher so it stays clear of nav */
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--title);
+  font-weight: 700;
+  font-size: 56px; /* smaller font so it fits neatly */
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+/* NAV sits clearly below the header image */
+.site-nav {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--navbg);
+}
+
+.tabs a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding: 0 24px;
+  line-height: 1.6;
+}
+.tabs a + a { border-left: 1px solid var(--divider); }
+
+main, .site-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.content-article { padding: 20px 0; }
+.content-article h2 { margin: 10px 0; }
+.article-img.left { float: left; max-width: 220px; margin: 0 16px 12px 0; }
+.content-article::after { content: ""; display: block; clear: both; }
+
+.facts ul { list-style: disc inside; margin: 0; padding: 0; }
+
+.contact h2 { margin: 16px 0; }
+.boxed { background: var(--box); border: 1px solid var(--border); padding: 12px; }
+.field { display: flex; flex-direction: column; margin-bottom: 12px; }
+label { font-size: .95rem; }
+
+input, textarea {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #c8d2d6;
+  background: #fff;
+  color: #000;
+}
+textarea { resize: vertical; }
+
+.radios legend { margin-bottom: .4rem; }
+.radio-row { display: flex; align-items: center; gap: 20px; }
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #1e5220;
+  background: var(--btn);
+  color: var(--btntext);
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+
+.site-footer { padding: 30px 0; text-align: left; }
