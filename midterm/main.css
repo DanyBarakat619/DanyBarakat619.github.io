@@ -1,68 +1,114 @@
-
-display:flex;
-justify-content:center;
-gap:40px;
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-padding:10px;
-}
-.site-nav a{
-text-decoration:none;
-color:var(--text);
-font-weight:bold;
+:root {
+  --primary: #aad4cf;
+  --accent: #ffb347;
+  --text: #0d1b1e;
+  --nav: #004aad;
+  --box: #f5f5f5;
+  --line: #333;
 }
 
-
-.content-article{
-padding:20px;
-}
-.article-img.left{
-float:left;
-max-width:220px;
-margin:0 16px 12px 0;
-}
-.content-article::after{
-content:"";
-display:block;
-clear:both;
+body {
+  margin: 0;
+  background: var(--primary);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 
-
-.facts ul{
-list-style:disc inside;
-margin:0;
-padding:0 20px;
+header {
+  position: relative;
 }
 
-
-.contact .boxed{
-background:var(--box);
-border:2px solid var(--line);
-padding:12px;
-}
-.field{
-display:flex;
-flex-direction:column;
-margin-bottom:12px;
+.header-img {
+  width: 100%;
+  height: auto;
 }
 
-
-.radio-row{
-display:flex;
-gap:10px;
-align-items:center;
+.site-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent);
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .5);
 }
 
-
-button{
-padding:6px 12px;
-border:1px solid var(--line);
-background:#ddd;
-cursor:pointer;
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-top: 2px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  padding: 10px;
+  background: var(--nav);
 }
 
+.site-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
 
-footer{
-text-align:center;
-padding:20px;
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.content-article {
+  padding: 20px;
+}
+
+.article-img.left {
+  float: left;
+  max-width: 220px;
+  margin: 0 16px 12px 0;
+}
+
+.content-article::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.facts ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.contact .boxed {
+  background: var(--box);
+  border: 2px solid var(--line);
+  padding: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.radio-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
 }
