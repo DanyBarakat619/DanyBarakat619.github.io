@@ -22,24 +22,29 @@ h1 {
   margin: 20px 0;
 }
 
-/* Navigation */
-nav {
+.site-nav{
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 12px 0;
   display: flex;
-  justify-content: center;
-  gap: 40px; /* spacing between links */
-  margin: 20px 0;
+  justify-content: space-between;   /* spread across */
+  align-items: center;
+  gap: 0;
+  background: transparent;          /* no background strip */
+  border-top: 1px solid var(--border, #324244);
+  border-bottom: 1px solid var(--border, #324244);
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 0 20px;
-  border-right: 1px solid #000; /* divider line */
+.site-nav a{
+  text-decoration: none;            /* remove underlines */
+  color: var(--text, #000);
+  font-weight: 700;
+  padding: 0 28px;                  /* spacing around text */
 }
 
-nav a:last-child {
-  border-right: none; /* remove line after last item */
+.site-nav a + a{
+  border-left: 1px solid var(--divider, #7f9094);  /* only vertical dividers */
+  padding-left: 28px;
 }
 
 }
