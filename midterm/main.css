@@ -134,3 +134,5 @@ form textarea { resize: vertical; }
 #contact .radios {
   background: transparent;
 }
+
+body { outline: 4px solid red !important; }
