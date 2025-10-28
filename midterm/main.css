@@ -7,27 +7,29 @@ body {
   line-height: 1.5;
 }
 
-/* HEADER */
+/* HEADER FIX */
 .site-header {
   position: relative;
 }
+
 .site-header img {
   width: 100%;
-  height: auto;
+  height: 250px;          /* same height as the mockup */
+  object-fit: cover;      /* keeps image cropped nicely */
   display: block;
 }
+
 .site-title {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #f25c4d;
-  font-size: 60px;
+  color: white;           /* white text like the example */
+  font-size: 50px;
   font-weight: bold;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
-
 /* NAVIGATION */
 .site-nav {
   max-width: 960px;
