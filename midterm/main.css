@@ -63,20 +63,22 @@ section img {
 form {
   border: 1px solid #000;
   padding: 20px;
-  background: #f4e1c6; /* match the main web background */
+  background-color: #f4e1c6; /* beige to match the page */
 }
 
-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
+form input,
 form textarea {
+  background-color: #ffffff; /* keep fields white */
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
 }
 
 form textarea {
