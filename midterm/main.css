@@ -63,7 +63,7 @@ section img {
 form {
   border: 1px solid #000;
   padding: 20px;
-  background: #ecf0f1;
+  background: #f4e1c6; /* match the main web background */
 }
 
 form label {
