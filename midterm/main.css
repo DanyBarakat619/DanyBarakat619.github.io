@@ -1,130 +1,105 @@
-/* Page base */
+/* === your original base === */
 body {
-  background-color: #f4e1c6; /* same beige background */
+  background-color: #f4e1c6; /* main page background */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-/* HERO IMAGE */
-.hero {
-  position: relative;
-  overflow: hidden;
-}
+h1 { margin: 20px 0; }
+h2 { margin-top: 40px; }
+
+/* === HERO (top banner) === */
+.hero { position: relative; overflow: hidden; }
 .hero-img {
   width: 100%;
-  height: 260px;
+  height: 280px;           /* adjust if you want taller/shorter */
   object-fit: cover;
   object-position: center;
   display: block;
 }
 .hero-title {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 56px;
-  font-weight: 700;
   color: #fff;
+  font-size: 56px;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,.5);
   margin: 0;
-  text-shadow: 0 2px 8px rgba(0,0,0,.4);
 }
 
-/* NAVIGATION BAR */
-.tabs {
-  max-width: 1100px;
-  margin: 10px auto 20px;
+/* === NAV that matches your simple anchors === */
+.site-nav {
   display: flex;
   justify-content: center;
-  gap: 120px;
-  padding: 14px 0;
+  gap: 80px;
+  padding: 15px 0;
+  margin: 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  background: transparent;   /* no bar fill */
 }
-.tabs a {
-  position: relative;
+.site-nav a {
+  color: #000;
   text-decoration: none;
-  color: #111;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 0 34px;
-}
-.tabs a + a::before {
-  content: "";
-  position: absolute;
-  left: -60px;
-  top: -14px;
-  bottom: -14px;
-  width: 1px;
-  background: #000;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 
-/* ARTICLE */
-.article h2 {
-  font-size: 28px;
-  margin: 0 0 12px;
-}
+/* === ARTICLE image (close-up) === */
 .article-img {
   float: left;
-  width: 185px;
-  height: 185px;
-  object-fit: cover;
-  margin: 0 18px 10px 0;
-}
-.article p {
-  margin-top: 0;
-  line-height: 1.5;
-  text-align: left;
+  width: 220px;
+  height: auto;
+  margin: 0 20px 20px 0;
 }
 
-/* CONTACT FORM */
+/* === FORM (from your working version) === */
 form {
   border: 1px solid #000;
   padding: 20px;
-  background: #e8eded; /* subtle box background */
-  max-width: 600px;
+  background: #ecf0f1;      /* subtle light grey */
 }
-form .field {
-  margin-bottom: 15px;
-}
+
 form label {
   display: block;
-  margin-bottom: 5px;
+  margin: 10px 0 5px;
 }
+
 form input,
 form textarea {
   width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.radio-row {
-  margin: 15px 0;
-}
-.radio-row label {
-  margin-right: 15px;
-}
-button {
+
+form textarea { resize: vertical; }
+
+.radios { margin: 10px 0; }
+.radios label { margin-right: 20px; }
+
+.btn-plain {
   background: #2c7a2c;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  font-weight: bold;
   cursor: pointer;
+  font-weight: bold;
 }
-button:hover {
-  background: #256b25;
-}
+.btn-plain:hover { background: #256b25; }
 
-/* FOOTER */
+/* footer */
 .site-footer {
   text-align: right;
-  padding: 20px;
   font-size: 14px;
+  padding: 20px;
 }
