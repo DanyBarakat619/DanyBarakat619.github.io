@@ -1,4 +1,6 @@
 /* ===== Main Styles ===== */
+* { box-sizing: border-box; }
+
 body {
   background-color: #f4e1c6; /* beige background */
   font-family: Arial, sans-serif;
@@ -39,10 +41,7 @@ nav ul li {
   font-weight: bold;
   border-right: 1px solid #000;
 }
-
-nav ul li:last-child {
-  border-right: none;
-}
+nav ul li:last-child { border-right: none; }
 
 main {
   max-width: 900px;
@@ -50,9 +49,7 @@ main {
   padding: 20px;
 }
 
-h2 {
-  margin-top: 40px;
-}
+h2 { margin-top: 40px; }
 
 section img {
   float: left;
@@ -61,50 +58,59 @@ section img {
   height: auto;
 }
 
-/* ===== Contact Form ===== */
+/* ===== Contact Form (positions tightened) ===== */
 .boxed {
-  background: #f4e1c6; /* match body beige */
+  background: #f4e1c6;                /* same beige */
   border: 1px solid #000;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;                    /* align with page width */
   margin: 0 auto;
-  padding: 20px;
+  padding: 22px 26px;                  /* inner padding – prevents overlap */
 }
 
+#contact h2 { margin: 10px 0 18px; }  /* closer to the form */
+
+.field { margin-bottom: 14px; }
 form label {
   display: block;
-  margin: 10px 0 5px;
+  margin: 0 0 6px;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   background: #fff; /* keep inputs white */
 }
 
-form textarea {
-  resize: vertical;
-}
+form textarea { resize: vertical; min-height: 150px; }
 
-/* Radios look like mockup */
-.radios {
-  margin: 15px 0;
-}
+/* Radios like the mockup: one line, tight spacing */
+.radios { margin-top: 14px; }
 .radios legend {
-  margin-bottom: 8px;
+  margin: 0 0 8px;
   font-weight: bold;
 }
+
 .radio-row {
   display: inline-flex;
-  gap: 15px;
+  gap: 28px;                           /* bring Yes/No/Maybe closer */
   align-items: center;
 }
 
-/* Submit button */
+.radio-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;                            /* space between dot and text */
+  font-weight: normal;
+}
+
+/* Submit button sits just under radios, not far away */
 .btn-plain {
+  display: inline-block;
+  margin-top: 14px;
   background: #2c7a2c;
   color: #fff;
   border: none;
@@ -112,15 +118,13 @@ form textarea {
   font-weight: bold;
   cursor: pointer;
 }
-.btn-plain:hover {
-  background: #256b25;
-}
+.btn-plain:hover { background: #256b25; }
 
-/* Footer aligned properly */
+/* Footer centered and aligned with content width */
 .site-footer {
   max-width: 900px;
   margin: 20px auto;
-  text-align: right;
+  text-align: center;
   font-size: 14px;
   padding: 20px 0;
 }
