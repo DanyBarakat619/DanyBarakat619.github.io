@@ -108,19 +108,3 @@ footer {
   font-size: 14px;
   padding: 20px;
 }
-
-/* ---- image sizing overrides (minimal) ---- */
-.site-header img{
-  width:100%;
-  height:260px;        /* banner height */
-  object-fit:cover;    /* crop to fill */
-  object-position:center;
-  display:block;
-}
-
-.article-img{
-  width:200px;         /* small close-up */
-  height:auto;
-  float:left;
-  margin:0 20px 12px 0;
-}
