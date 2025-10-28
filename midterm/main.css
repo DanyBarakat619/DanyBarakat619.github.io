@@ -113,6 +113,47 @@ textarea {
 
 /* Small gray button */
 .btn-plain{padding:6px 12px;border:1px solid #666;background:#efefef;color:#000;font-weight:700;cursor:pointer}
+
+/* ===== HEADER: match main web positioning & color ===== */
+
+/* make sure the header is a positioning context */
+header, .site-header {
+  position: relative !important;
+}
+
+/* header image: same cropped look */
+header img, .site-header img {
+  width: 100% !important;
+  height: 260px !important;        /* similar height to the example */
+  object-fit: cover !important;     /* crop nicely */
+  display: block !important;
+}
+
+/* title centered over the image, white text */
+header h1, .site-title {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  margin: 0 !important;
+  color: #ffffff !important;        /* keep text white */
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,.45) !important;
+  z-index: 2 !important;
+}
+
+/* subtle teal tint like the main web over the photo */
+header::after, .site-header::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(170, 212, 207, 0.25) !important; /* #aad4cf at ~25% */
+  z-index: 1 !important;
+}
+
+/* keep nav snug under the header image */
+nav { margin-top: 0 !important; }
 .btn-plain:hover{filter:brightness(1.05)}
 
 /* Footer right */
