@@ -35,22 +35,33 @@ h2 { margin-top: 40px; }
   margin: 0;
 }
 
-/* === NAV that matches your simple anchors === */
+/* === NAVIGATION (blue version style) === */
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  padding: 15px 0;
-  margin: 0;
+  align-items: center;
+  background: none;              /* no fill */
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background: transparent;   /* no bar fill */
 }
+
 .site-nav a {
-  color: #000;
-  text-decoration: none;
+  flex: 1;                       /* each link takes equal space */
+  text-align: center;
   font-weight: bold;
-  letter-spacing: .5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 15px 0;
+  border-right: 1px solid #000;  /* divider line */
+}
+
+.site-nav a:last-child {
+  border-right: none;            /* remove last divider */
+}
+
+.site-nav a:hover {
+  color: #666;
 }
 
 /* === ARTICLE image (close-up) === */
