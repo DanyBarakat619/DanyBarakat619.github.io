@@ -1,5 +1,5 @@
 body {
-  background-color: #f4e1c6; /* changed background only */
+  background-color: #f4e1c6; /* beige background */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -60,20 +60,13 @@ section img {
   height: auto;
 }
 
+/* FORM FIXES */
 form {
   border: 1px solid #000;
   padding: 20px;
-  background-color: #f4e1c6; /* beige to match the page */
-}
-
-form input,
-form textarea {
-  background-color: #ffffff; /* keep fields white */
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  background: #f4e1c6; /* same as body beige */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 form label {
@@ -81,16 +74,33 @@ form label {
   margin: 10px 0 5px;
 }
 
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
 form textarea {
   resize: vertical;
 }
 
-.radio-group {
-  margin: 10px 0;
+.radios {
+  margin: 15px 0;
 }
 
-.radio-group label {
-  margin-right: 20px;
+.radios legend {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.radio-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 button {
@@ -107,8 +117,7 @@ button:hover {
 }
 
 footer {
-  text-align: right;
+  text-align: center;
   font-size: 14px;
   padding: 20px;
 }
-
