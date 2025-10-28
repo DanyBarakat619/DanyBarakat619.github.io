@@ -65,7 +65,7 @@ h2 { margin-top: 40px; }
 form {
   border: 1px solid #000;
   padding: 20px;
-  background: #ecf0f1;      /* subtle light grey */
+  background: #f4e1c6;      /* matches the web’s beige background */
 }
 
 form label {
