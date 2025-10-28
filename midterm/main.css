@@ -161,28 +161,7 @@ body { outline: 4px solid red !important; }
   border-right: none;      /* remove last divider */
 }
 
-/* === OVERRIDE: only keep the vertical separators in the nav === */
-.site-nav {
-  border-top: none !important;
-  border-bottom: none !important;
-  background: transparent !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
 
-/* anchors inside the nav */
-.site-nav a {
-  text-decoration: none !important;
-  font-weight: bold !important;
-  color: #000 !important;
-  padding: 15px 0 !important;
-  margin: 0 !important;
-
-  /* keep ONLY the vertical separators */
-  border-top: none !important;
-  border-bottom: none !important;
-  border-right: 1px solid #000 !important;
-}
 
 /* no separator after the last link */
 .site-nav a:last-child {
