@@ -65,6 +65,7 @@ h2 { margin-top: 40px; }
 form {
   border: 1px solid #000;
   padding: 20px;
+  form.boxed
   background: #f4e1c6; /* exact beige like your body */
 }
 
