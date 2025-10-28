@@ -1,3 +1,4 @@
+/* ===== Main Styles ===== */
 body {
   background-color: #f4e1c6; /* beige background */
   font-family: Arial, sans-serif;
@@ -60,13 +61,13 @@ section img {
   height: auto;
 }
 
-/* FORM FIXES */
-form {
+/* ===== Contact Form ===== */
+.boxed {
+  background: #f4e1c6; /* match body beige */
   border: 1px solid #000;
-  padding: 20px;
-  background: #f4e1c6; /* same as body beige */
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 form label {
@@ -81,43 +82,45 @@ form textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background: #ffffff;
+  background: #fff; /* keep inputs white */
 }
 
 form textarea {
   resize: vertical;
 }
 
+/* Radios look like mockup */
 .radios {
   margin: 15px 0;
 }
-
 .radios legend {
   margin-bottom: 8px;
   font-weight: bold;
 }
-
 .radio-row {
-  display: flex;
+  display: inline-flex;
   gap: 15px;
   align-items: center;
 }
 
-button {
+/* Submit button */
+.btn-plain {
   background: #2c7a2c;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
-
-button:hover {
+.btn-plain:hover {
   background: #256b25;
 }
 
-footer {
-  text-align: center;
+/* Footer aligned properly */
+.site-footer {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: right;
   font-size: 14px;
-  padding: 20px;
+  padding: 20px 0;
 }
