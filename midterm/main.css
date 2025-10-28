@@ -167,3 +167,65 @@ body { outline: 4px solid red !important; }
 .site-nav a:last-child {
   border-right: none !important;
 }
+
+/* === CONTACT form box === */
+.boxed{
+  border:1px solid #000;
+  padding:20px;
+  background:#f4e1c6;        /* your beige page color */
+  max-width:1100px;
+  margin:0 auto 40px;
+}
+
+/* Inputs stay INSIDE the black border */
+.boxed input[type="text"],
+.boxed input[type="email"],
+.boxed textarea{
+  width:100%;
+  box-sizing:border-box;      /* <- fixes the overlap */
+  padding:12px 14px;
+  margin:6px 0 16px;
+  border:1px solid #c7c7c7;
+  border-radius:2px;
+  background:#fff;
+}
+
+.boxed textarea{
+  min-height:160px;
+  resize:vertical;
+}
+
+/* Radios: inline row like the blue version */
+.radios{
+  margin-top:12px;
+}
+
+.radios legend{
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.radio-row{
+  display:flex;
+  align-items:center;
+  gap:28px;                   /* spacing between Yes / No / Maybe */
+}
+
+.radio-row label{
+  display:flex;
+  align-items:center;
+  gap:8px;                    /* space between dot and word */
+  font-weight:500;
+}
+
+/* Send button (unchanged look) */
+.btn-plain{
+  background:#2c7a2c;
+  color:#fff;
+  border:1px solid #1e5c1e;
+  padding:10px 18px;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn-plain:hover{ filter:brightness(1.05); }
+
