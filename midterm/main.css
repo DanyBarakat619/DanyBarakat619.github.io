@@ -105,43 +105,15 @@ input, textarea {
 textarea {
   resize: vertical;
 }
-/* Radios */
-.radios {
-  border: none;
-  margin: 8px 0 12px;
-  padding: 0;
-}
-.radios legend {
-  margin-bottom: .4rem;
-  padding: 0;
-}
-.radio-row {
-  display: inline-flex;
-  gap: 14px;
-  align-items: center;
-}
-.radio-row label {
-  display: inline-flex;
-  gap: 6px;
-  align-items: center;
-  font-weight: normal;
-}
+/* Radios inline, no box */
+.radios{border:none;margin:8px 0 12px;padding:0}
+.radios legend{margin-bottom:.4rem;padding:0}
+.radio-row{display:inline-flex;gap:14px;align-items:center}
+.radio-row label{display:inline-flex;gap:6px;align-items:center;font-weight:normal}
 
-/* Button */
-.btn-plain {
-  padding: 6px 12px;
-  border: 1px solid #666;
-  background: #efefef;
-  color: #000;
-  font-weight: 700;
-  cursor: pointer;
-}
-.btn-plain:hover {
-  filter: brightness(1.05);
-}
+/* Small gray button */
+.btn-plain{padding:6px 12px;border:1px solid #666;background:#efefef;color:#000;font-weight:700;cursor:pointer}
+.btn-plain:hover{filter:brightness(1.05)}
 
-/* FOOTER */
-.site-footer {
-  text-align: right;
-  padding: 30px 0;
-}
+/* Footer right */
+.site-footer{text-align:right;padding:30px 0}
