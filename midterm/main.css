@@ -104,3 +104,22 @@ form textarea { resize: vertical; }
   font-size: 14px;
   padding: 20px;
 }
+
+/* === FORCE the contact section to match the page background === */
+#contact,
+#contact form,
+#contact .boxed {
+  background-color: #f4e1c6 !important;  /* same beige as body */
+}
+
+/* keep the inputs white so they pop */
+#contact input,
+#contact textarea {
+  background: #ffffff;
+}
+
+/* make any inner wrappers transparent */
+#contact .field,
+#contact .radios {
+  background: transparent;
+}
