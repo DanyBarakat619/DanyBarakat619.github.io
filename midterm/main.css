@@ -136,3 +136,29 @@ form textarea { resize: vertical; }
 }
 
 body { outline: 4px solid red !important; }
+
+/* === NAV clean style === */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background: transparent; /* no background fill */
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  flex: 1;                 /* each link takes equal space */
+  text-align: center;
+  text-decoration: none;   /* removes underline */
+  font-weight: bold;
+  color: #000;
+  padding: 15px 0;
+  border-right: 1px solid #000;
+}
+
+.site-nav a:last-child {
+  border-right: none;      /* remove last divider */
+}
