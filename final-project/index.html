@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Star Media</title>
-  <!-- CSS will be added later in the final project -->
+  <!-- HTML Page Mockup – CSS will be added in the next assignment -->
 </head>
 <body>
-  <!-- ================= HEADER & NAVIGATION ================= -->
+  <!-- =========================================================
+       HEADER AND MAIN NAVIGATION
+       Logo, nav links, and search box (top dark bar in mockup)
+  ========================================================== -->
   <header class="site-header">
     <div class="header-inner">
       <!-- Logo -->
       <div class="logo-area">
-        <!-- change src to your real logo file -->
         <img src="images/logo.png" alt="Three Star Media logo" class="logo-image">
       </div>
 
@@ -36,14 +38,16 @@
     </div>
   </header>
 
-  <!-- ================= MAIN CONTENT ================= -->
+  <!-- =========================================================
+       MAIN PAGE CONTENT
+  ========================================================== -->
   <main>
-
-    <!-- ================= HERO SECTION ================= -->
-    <!-- Big banner with Welcome text and Connect button -->
+    <!-- =====================================================
+         HERO SECTION
+         Big office image + Welcome text + Connect button
+    ====================================================== -->
     <section id="home" class="hero-section">
       <div class="hero-image-wrapper">
-        <!-- change src to the large office hero image -->
         <img src="images/hero-office.jpg" alt="Modern office space" class="hero-image">
       </div>
 
@@ -58,12 +62,13 @@
       </div>
     </section>
 
-    <!-- ================= ABOUT US SECTION ================= -->
-    <!-- Image on the left, About Us text on the right -->
+    <!-- =====================================================
+         ABOUT US SECTION
+         Image on left, text on right (yellow block in mockup)
+    ====================================================== -->
     <section id="about" class="about-section">
       <div class="about-inner">
         <div class="about-image-wrapper">
-          <!-- change src to the table / office image -->
           <img src="images/about-office-table.jpg" alt="Office table and workspace" class="about-image">
         </div>
 
@@ -83,8 +88,10 @@
       </div>
     </section>
 
-    <!-- ================= OUR SERVICES SECTION ================= -->
-    <!-- Title + grid of 5 service cards like the mockup -->
+    <!-- =====================================================
+         OUR SERVICES SECTION
+         Title + 5 service cards like the mockup
+    ====================================================== -->
     <section id="services" class="services-section">
       <h2 class="section-title">Our Services</h2>
 
@@ -161,9 +168,140 @@
       </div>
     </section>
 
-    <!-- ================= OUR VISION SECTION ================= -->
-    <!-- Full-width banner with text on top and Learn More button -->
+    <!-- =====================================================
+         OUR VISION SECTION
+         Full-width banner with text + Learn More button
+    ====================================================== -->
     <section class="vision-section">
       <div class="vision-image-wrapper">
-        <!-- change src to the paper boats image -->
-        <img src="images/vision-boats.jpg"
+        <img src="images/vision-boats.jpg" alt="Paper boats on blue background" class="vision-image">
+      </div>
+
+      <div class="vision-content">
+        <h2 class="section-title">Our Vision</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem deleniti iure, sit
+          accusantium rerum est commodi veniam temporibus nobis officiis eaque. Veritatis
+          exercitationem delectus ex ab laudantium.
+        </p>
+        <a href="#" class="button button-primary">Learn More</a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         OUR TEAM SECTION
+         Title + Bob card + John card
+    ====================================================== -->
+    <section id="team" class="team-section">
+      <h2 class="section-title">Our Team</h2>
+
+      <div class="team-grid">
+        <!-- Team member: Bob Rite -->
+        <article class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/team-bob.jpg" alt="Bob Rite portrait" class="team-image">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Bob Rite</h3>
+            <p class="team-role">CFO and Co-owner</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed
+              cum ad officiis sint cumque fugiat similique. Earum laudantium est possimus? Voluptatem
+              architecto repellendus harum sit voluptatum tempora.
+            </p>
+          </div>
+        </article>
+
+        <!-- Team member: John Doe -->
+        <article class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/team-john.jpg" alt="John Doe portrait" class="team-image">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-role">CEO and Co-owner</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed
+              cum ad officiis sint cumque fugiat similique. Earum laudantium est possimus? Voluptatem
+              architecto repellendus harum sit voluptatum tempora.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CONTACT SECTION
+         Form + map + hours of operation table
+    ====================================================== -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+
+      <div class="contact-top">
+        <!-- Contact form -->
+        <div class="contact-form-wrapper">
+          <h3>Send us a message</h3>
+
+          <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name">
+            </div>
+
+            <div class="form-group">
+              <label for="email-address">Email</label>
+              <input type="email" id="email-address" name="email-address">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="button button-dark">Send</button>
+          </form>
+        </div>
+
+        <!-- Map / location -->
+        <div class="contact-location">
+          <h3>Location</h3>
+          <img src="images/map-algonquin.jpg" alt="Map showing Algonquin College" class="map-image">
+        </div>
+      </div>
+
+      <!-- Hours of operation -->
+      <div class="hours-section">
+        <h3>Hours of operation</h3>
+        <table class="hours-table">
+          <thead>
+            <tr>
+              <th scope="col">Days</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9 AM - 6 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       Copyright + Unsplash credit
+  ========================================================== -->
+  <footer class="site-footer">
+    <p>&copy; Copyright Three Star Media, 2020</p>
+    <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+  </footer>
+</body>
+</html>
+
