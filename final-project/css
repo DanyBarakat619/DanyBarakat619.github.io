@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HEADER */
+.site-header {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-item a:hover {
+  background: #f3b600;
+}
+
+.search-form input {
+  padding: 5px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-primary {
+  background: #f3b600;
+  color: black;
+}
+
+.button-dark {
+  background: #222;
+  color: white;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-content {
+  width: 50%;
+}
+
+/* SERVICES */
+.services-section {
+  padding: 40px 5%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-image {
+  width: 100%;
+}
+
+.service-card {
+  background: #fbe19d;
+  padding: 15px;
+}
+
+/* VISION */
+.vision-section {
+  position: relative;
+}
+
+.vision-image {
+  width: 100%;
+  display: block;
+}
+
+.vision-content {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  color: white;
+}
+
+/* TEAM */
+.team-section {
+  padding: 40px 5%;
+}
+
+.team-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.team-card {
+  background: #fbe19d;
+  padding: 20px;
+  width: 50%;
+}
+
+.team-image {
+  width: 100%;
+}
+
+/* CONTACT */
+.contact-section {
+  padding: 40px 5%;
+}
+
+.contact-top {
+  display: flex;
+  gap: 20px;
+}
+
+.map-image {
+  width: 100%;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.hours-table th, 
+.hours-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.site-footer a {
+  color: #f3b600;
+}
