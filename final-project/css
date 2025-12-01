@@ -1,307 +1,208 @@
-/* =========================================
+/* =========================================================
    CSS RESET
-   ========================================= */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+   ========================================================= */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.5;
+/* =========================================================
+   BASE STYLES
+   ========================================================= */
+html, body {
+  font-family: 'Open Sans', sans-serif;
   color: #222;
-  background-color: #ffffff;
+  background: white;
 }
 
-/* Reset for images and lists */
 img {
+  width: 100%;
   display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
-/* =========================================
-   GLOBAL LAYOUT
-   ========================================= */
-
-/* Max width container requirement */
-.site-header,
-main,
-.site-footer {
+/* =========================================================
+   WRAPPER CONTAINER (max width 1200px)
+   ========================================================= */
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* Base spacing */
-section,
-.site-header,
-.site-footer {
-  padding: 1.5rem 1rem;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-}
-
-.button-primary {
-  background-color: #c78c06;
-  color: #222;
-}
-
-.button-dark {
-  background-color: #222;
-  color: #ffffff;
-}
-
-.button:hover,
-.button:focus {
-  opacity: 0.9;
-}
-
-/* =========================================
-   HEADER & NAVIGATION  (flexbox used here)
-   ========================================= */
-
+/* =========================================================
+   HEADER + NAVIGATION (mobile first)
+   ========================================================= */
 .site-header {
-  background-color: #222;
-  color: #ffffff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  background: #222;
+  padding: 15px;
 }
 
 .header-inner {
-  display: flex;              /* FLEXBOX */
-  flex-direction: column;     /* mobile first */
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.logo-area img {
-  width: 80px;
+.logo-image {
+  width: 120px;
 }
 
-/* Navigation list */
-.main-nav .nav-list {
-  display: flex;              /* FLEXBOX */
-  flex-direction: column;     /* stacked on mobile */
-  gap: 0.5rem;
+/* NAV LIST */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .nav-link {
-  padding: 0.4rem 0.6rem;
+  color: white;
+  font-weight: 600;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  background-color: #c78c06;
-  color: #222;
-}
-
-/* Search */
+/* SEARCH BAR */
 .search-form {
-  display: flex;              /* FLEXBOX */
-  flex-direction: row;
-  gap: 0.5rem;
+  display: flex;
+  gap: 10px;
 }
 
 .search-input {
-  padding: 0.4rem 0.6rem;
-  border: 1px solid #ffe6ac;
+  padding: 7px;
+  width: 100%;
 }
 
 .search-button {
-  padding: 0.4rem 0.8rem;
-  background-color: #c78c06;
-  color: #222;
+  background: #c78c06;
   border: none;
-  font-weight: 600;
+  padding: 7px 12px;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
 
-/* =========================================
+/* =========================================================
    HERO SECTION
-   ========================================= */
-
+   ========================================================= */
 .hero-section {
-  padding-top: 0;
+  position: relative;
 }
 
-.hero-image-wrapper img {
+.hero-image {
   width: 100%;
 }
 
 .hero-content {
-  background-color: rgba(34, 34, 34, 0.85);
-  color: #ffffff;
-  padding: 1.5rem 1rem;
-  margin-top: -3rem; /* pulls over the image a bit */
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 30px;
+  margin-top: -150px;
 }
 
 .hero-title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
-.hero-text {
-  font-size: 0.95rem;
-  max-width: 38rem;
+.button-primary {
+  background: #c78c06;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
-/* =========================================
+/* =========================================================
    ABOUT SECTION
-   ========================================= */
-
+   ========================================================= */
 .about-section {
-  background-color: #ffe6ac;
+  background: #ffe6ac;
+  padding: 40px 15px;
 }
 
 .about-inner {
-  display: flex;              /* FLEXBOX */
-  flex-direction: column;     /* stacked on mobile */
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.about-image-wrapper {
-  flex: 1;
-}
-
-.about-content {
-  flex: 1;
-}
-
-/* =========================================
-   SERVICES SECTION  (grid used here)
-   ========================================= */
-
+/* =========================================================
+   SERVICES SECTION (GRID)
+   ========================================================= */
 .services-section {
-  background-color: #ffffff;
+  padding: 40px 15px;
 }
 
-.services-section .section-title {
-  margin-bottom: 1.5rem;
-}
-
-/* GRID requirement */
 .services-grid {
-  display: grid;              /* GRID */
-  grid-template-columns: 1fr; /* mobile first: 1 column */
-  gap: 1.5rem;
+  display: grid;
+  gap: 20px;
 }
 
 .service-card {
-  background-color: #ffe6ac;
-  display: flex;
-  flex-direction: column;
-}
-
-.service-image {
-  width: 100%;
+  background: #ffe6ac;
 }
 
 .service-content {
-  padding: 1rem;
+  padding: 20px;
 }
 
 .service-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
-.service-content p {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+.button-dark {
+  background: #222;
+  color: white;
+  padding: 12px 18px;
+  margin-top: 15px;
+  display: inline-block;
+  font-weight: 600;
 }
 
-/* =========================================
+/* =========================================================
    VISION SECTION
-   ========================================= */
-
+   ========================================================= */
 .vision-section {
-  margin-top: 2rem;
-  padding: 0;
   position: relative;
 }
 
-.vision-image-wrapper img {
+.vision-image {
   width: 100%;
 }
 
 .vision-content {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 5%;
-  transform: translateY(-50%);
-  color: #ffffff;
-  max-width: 24rem;
+  color: white;
+  max-width: 300px;
 }
 
-.vision-content .section-title {
-  margin-bottom: 0.75rem;
+.vision-content .button-primary {
+  margin-top: 20px;
 }
 
-.vision-content p {
-  font-size: 0.9rem;
-}
-
-/* If absolute overlay fails on small screens, give padding */
-@media (max-width: 500px) {
-  .vision-content {
-    position: static;
-    transform: none;
-    padding: 1.5rem 1rem;
-    background-color: rgba(34, 34, 34, 0.8);
-  }
-}
-
-/* =========================================
+/* =========================================================
    TEAM SECTION
-   ========================================= */
-
+   ========================================================= */
 .team-section {
-  background-color: #ffffff;
-}
-
-.team-section .section-title {
-  margin-bottom: 1.5rem;
+  padding: 40px 15px;
 }
 
 .team-grid {
-  display: grid;              /* GRID-like layout */
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  display: grid;
+  gap: 25px;
 }
 
 .team-card {
-  background-color: #ffe6ac;
+  background: #ffe6ac;
 }
 
 .team-image-wrapper img {
@@ -309,170 +210,119 @@ section,
 }
 
 .team-content {
-  padding: 1rem;
+  padding: 20px;
 }
 
 .team-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .team-role {
-  font-size: 0.9rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #222;
+  display: inline-block;
 }
 
-/* =========================================
+/* =========================================================
    CONTACT SECTION
-   ========================================= */
-
+   ========================================================= */
 .contact-section {
-  background-color: #ffffff;
+  padding: 40px 15px;
 }
 
-.contact-section .section-title {
-  margin-bottom: 1.5rem;
-}
-
-/* contact-top uses FLEXBOX */
 .contact-top {
-  display: flex;              /* FLEXBOX */
-  flex-direction: column;     /* mobile first */
-  gap: 1.5rem;
-}
-
-.contact-form-wrapper h3,
-.contact-location h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .contact-form .form-group {
-  margin-bottom: 0.8rem;
-}
-
-.contact-form label {
-  display: block;
-  font-size: 0.85rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.4rem 0.6rem;
-  border: 1px solid #ccc;
-  font-family: inherit;
-  font-size: 0.9rem;
+  padding: 10px;
 }
 
-/* Hours table */
-.hours-section {
-  margin-top: 2rem;
-}
-
-.hours-section h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
+.map-image {
+  width: 100%;
 }
 
 .hours-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  margin-top: 20px;
 }
 
 .hours-table th,
 .hours-table td {
-  border: 1px solid #ccc;
-  padding: 0.6rem 0.8rem;
+  border: 1px solid #222;
+  padding: 12px;
 }
 
-.hours-table thead {
-  background-color: #ffe6ac;
+.hours-table thead th {
+  background: #ffe6ac;
 }
 
-/* =========================================
+/* =========================================================
    FOOTER
-   ========================================= */
-
+   ========================================================= */
 .site-footer {
-  background-color: #222;
-  color: #ffe6ac;
-  font-size: 0.85rem;
+  background: #222;
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
 }
 
-.site-footer a {
-  color: #ffe6ac;
-  text-decoration: underline;
-}
+/* =========================================================
+   DESKTOP STYLES (760px and above)
+   ========================================================= */
+@media screen and (min-width: 760px) {
 
-/* =========================================
-   MEDIA QUERY: 760px and above (desktop)
-   ========================================= */
-
-@media (min-width: 760px) {
-  /* Header layout */
+  /* HEADER */
   .header-inner {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
-  .main-nav .nav-list {
+  .main-nav ul {
     flex-direction: row;
-    gap: 1rem;
+    gap: 20px;
   }
 
-  .search-form {
-    margin-left: auto;
-  }
-
-  /* Hero text bigger on desktop */
+  /* HERO */
   .hero-title {
     font-size: 3rem;
   }
 
-  .hero-content {
-    margin: -8rem 3rem 2rem;
-    padding: 2rem 2.5rem;
-    max-width: 60%;
-  }
-
-  /* About: side by side */
+  /* ABOUT SECTION */
   .about-inner {
     flex-direction: row;
   }
 
-  .about-image-wrapper,
-  .about-content {
-    flex: 1;
-  }
-
-  .about-content {
-    padding-left: 1.5rem;
-  }
-
-  /* Services grid: multiple columns */
+  /* SERVICES GRID - 3-column */
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Team: 2 columns */
+  /* TEAM GRID - 2-column */
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Contact top: form + map side by side */
+  /* CONTACT TOP - side-by-side */
   .contact-top {
     flex-direction: row;
-    align-items: flex-start;
   }
 
   .contact-form-wrapper,
   .contact-location {
-    flex: 1;
+    width: 50%;
   }
+
 }
