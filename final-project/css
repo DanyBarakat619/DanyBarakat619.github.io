@@ -1,0 +1,478 @@
+/* =========================================
+   CSS RESET
+   ========================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #ffffff;
+}
+
+/* Reset for images and lists */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   GLOBAL LAYOUT
+   ========================================= */
+
+/* Max width container requirement */
+.site-header,
+main,
+.site-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base spacing */
+section,
+.site-header,
+.site-footer {
+  padding: 1.5rem 1rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: #c78c06;
+  color: #222;
+}
+
+.button-dark {
+  background-color: #222;
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.9;
+}
+
+/* =========================================
+   HEADER & NAVIGATION  (flexbox used here)
+   ========================================= */
+
+.site-header {
+  background-color: #222;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.header-inner {
+  display: flex;              /* FLEXBOX */
+  flex-direction: column;     /* mobile first */
+  gap: 1rem;
+}
+
+.logo-area img {
+  width: 80px;
+}
+
+/* Navigation list */
+.main-nav .nav-list {
+  display: flex;              /* FLEXBOX */
+  flex-direction: column;     /* stacked on mobile */
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 0.4rem 0.6rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #c78c06;
+  color: #222;
+}
+
+/* Search */
+.search-form {
+  display: flex;              /* FLEXBOX */
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ffe6ac;
+}
+
+.search-button {
+  padding: 0.4rem 0.8rem;
+  background-color: #c78c06;
+  color: #222;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero-section {
+  padding-top: 0;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+}
+
+.hero-content {
+  background-color: rgba(34, 34, 34, 0.85);
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  margin-top: -3rem; /* pulls over the image a bit */
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 0.95rem;
+  max-width: 38rem;
+}
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+.about-section {
+  background-color: #ffe6ac;
+}
+
+.about-inner {
+  display: flex;              /* FLEXBOX */
+  flex-direction: column;     /* stacked on mobile */
+  gap: 1rem;
+}
+
+.about-image-wrapper {
+  flex: 1;
+}
+
+.about-content {
+  flex: 1;
+}
+
+/* =========================================
+   SERVICES SECTION  (grid used here)
+   ========================================= */
+
+.services-section {
+  background-color: #ffffff;
+}
+
+.services-section .section-title {
+  margin-bottom: 1.5rem;
+}
+
+/* GRID requirement */
+.services-grid {
+  display: grid;              /* GRID */
+  grid-template-columns: 1fr; /* mobile first: 1 column */
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-image {
+  width: 100%;
+}
+
+.service-content {
+  padding: 1rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* =========================================
+   VISION SECTION
+   ========================================= */
+
+.vision-section {
+  margin-top: 2rem;
+  padding: 0;
+  position: relative;
+}
+
+.vision-image-wrapper img {
+  width: 100%;
+}
+
+.vision-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  max-width: 24rem;
+}
+
+.vision-content .section-title {
+  margin-bottom: 0.75rem;
+}
+
+.vision-content p {
+  font-size: 0.9rem;
+}
+
+/* If absolute overlay fails on small screens, give padding */
+@media (max-width: 500px) {
+  .vision-content {
+    position: static;
+    transform: none;
+    padding: 1.5rem 1rem;
+    background-color: rgba(34, 34, 34, 0.8);
+  }
+}
+
+/* =========================================
+   TEAM SECTION
+   ========================================= */
+
+.team-section {
+  background-color: #ffffff;
+}
+
+.team-section .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.team-grid {
+  display: grid;              /* GRID-like layout */
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.team-card {
+  background-color: #ffe6ac;
+}
+
+.team-image-wrapper img {
+  width: 100%;
+}
+
+.team-content {
+  padding: 1rem;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+  background-color: #ffffff;
+}
+
+.contact-section .section-title {
+  margin-bottom: 1.5rem;
+}
+
+/* contact-top uses FLEXBOX */
+.contact-top {
+  display: flex;              /* FLEXBOX */
+  flex-direction: column;     /* mobile first */
+  gap: 1.5rem;
+}
+
+.contact-form-wrapper h3,
+.contact-location h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 0.8rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* Hours table */
+.hours-section {
+  margin-top: 2rem;
+}
+
+.hours-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.hours-table th,
+.hours-table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.8rem;
+}
+
+.hours-table thead {
+  background-color: #ffe6ac;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+  background-color: #222;
+  color: #ffe6ac;
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: #ffe6ac;
+  text-decoration: underline;
+}
+
+/* =========================================
+   MEDIA QUERY: 760px and above (desktop)
+   ========================================= */
+
+@media (min-width: 760px) {
+  /* Header layout */
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-nav .nav-list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .search-form {
+    margin-left: auto;
+  }
+
+  /* Hero text bigger on desktop */
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    margin: -8rem 3rem 2rem;
+    padding: 2rem 2.5rem;
+    max-width: 60%;
+  }
+
+  /* About: side by side */
+  .about-inner {
+    flex-direction: row;
+  }
+
+  .about-image-wrapper,
+  .about-content {
+    flex: 1;
+  }
+
+  .about-content {
+    padding-left: 1.5rem;
+  }
+
+  /* Services grid: multiple columns */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Team: 2 columns */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact top: form + map side by side */
+  .contact-top {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-form-wrapper,
+  .contact-location {
+    flex: 1;
+  }
+}
