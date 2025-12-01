@@ -492,6 +492,27 @@ p {
   font-size: 0.8em;
   margin-left: 0.3em;
 }
+
+     /* ====== HERO TITLE BIGGER ====== */
+.hero-overlay h1 {
+  font-size: 4rem;      /* makes it big like the mockup */
+  line-height: 1.1;
+}
+
+/* ====== ABOUT SECTION YELLOW BACKGROUND ====== */
+.about-section {
+  background-color: #f4e3b1; /* light yellow like mockup */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ====== CONTACT NAV ARROW ====== */
+.main-nav .nav-list li:last-child .nav-link::after {
+  content: " \25BC";      /* ▼ arrow */
+  font-size: 0.7em;
+  margin-left: 0.35em;
+}
+
      
   }
 }
