@@ -427,5 +427,54 @@ p {
   .hero-overlay .container,
   .vision-overlay .container {
     margin: 0 1rem;
+
+     /* ===== OUR TEAM SECTION ===== */
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  grid-auto-rows: auto;
+  gap: 0; /* no gaps between cells, like the mockup */
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* yellow bio boxes */
+.team-bio {
+  background-color: #f6df9b; /* light yellow like the mockup */
+  padding: 2.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.team-bio h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.8rem;
+}
+
+/* role line under the name */
+.team-role {
+  font-weight: 700;
+  margin: 0 0 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #c89a2b; /* thin gold line */
+}
+
+/* simple mobile stacking */
+@media (max-width: 800px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   }
 }
