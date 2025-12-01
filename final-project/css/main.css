@@ -376,11 +376,15 @@ p {
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  display: block;
+  text-align: left;
+  padding: 40px 0;
 }
+
+.site-footer p {
+  margin: 5px 0;
+}
+
 
 /* =========================================================
    MEDIA QUERIES (DESKTOP LAYOUTS)
