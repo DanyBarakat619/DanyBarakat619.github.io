@@ -481,6 +481,12 @@ p {
   margin-bottom: 1rem;
 }
 
+     /* Small arrow after Contact link */
+.nav-link-contact::after {
+  content: " \25B6";   /* ► arrow */
+  font-size: 0.8em;
+  margin-left: 0.3em;
+}
      
   }
 }
