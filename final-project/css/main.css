@@ -1,16 +1,15 @@
-/* ============================================
+/* ============================================================
    CSS RESET
-=============================================== */
+   ============================================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ============================================
+/* ============================================================
    BASE STYLES
-=============================================== */
-
+   ============================================================ */
 html, body {
     font-family: 'Open Sans', sans-serif;
     color: #222;
@@ -33,19 +32,20 @@ a {
     padding: 1rem;
 }
 
-/* ============================================
-   HEADER + NAVIGATION (MOBILE FIRST)
-=============================================== */
-
+/* ============================================================
+   HEADER + NAVIGATION
+   ============================================================ */
 .site-header {
-    background: #222;
-    padding: 1rem;
+    background: #333;
+    padding: 1rem 0;
+    color: white;
 }
 
 .header-inner {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .logo-area img {
@@ -55,293 +55,76 @@ a {
 .main-nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .main-nav a {
     color: white;
     font-weight: 600;
+    font-size: 1rem;
+}
+
+.search-form {
+    display: flex;
+    gap: 0.3rem;
 }
 
 .search-form input {
-    padding: 0.4rem;
+    padding: 0.5rem;
 }
 
 .search-form button {
-    padding: 0.4rem 0.7rem;
+    padding: 0.5rem 1rem;
     background: #c78c06;
     border: none;
     cursor: pointer;
-}
-
-/* ============================================
-   HERO SECTION
-=============================================== */
-
-.hero {
-    position: relative;
-}
-
-.hero-text {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    width: 90%;
-}
-
-.hero-text h1 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.hero-btn {
-    background: #c78c06;
-    padding: 0.8rem 1.5rem;
-    display: inline-block;
-    margin-top: 1rem;
     color: #222;
-    font-weight: 700;
 }
 
-/* ============================================
-   ABOUT SECTION
-=============================================== */
-
-.about-section {
-    background: #ffe6ac;
-    padding: 2rem 1rem;
-}
-
-.about-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* ============================================
-   SERVICES SECTION
-=============================================== */
-
-.services {
-    padding: 2rem 1rem;
-}
-
-.services-grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.service-card {
-    background: #ffe6ac;
-    padding-bottom: 1rem;
-}
-
-.service-card h3 {
-    padding: 1rem;
-    font-size: 1.3rem;
-}
-
-.service-card p {
-    padding: 0 1rem;
-}
-
-.service-btn {
-    margin: 1rem;
-    background: #222;
-    color: white;
-    padding: 0.8rem 1rem;
-    display: inline-block;
-}
-
-/* ============================================
-   VISION BANNER
-=============================================== */
-
-.vision {
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero-section {
     position: relative;
-}
-
-.vision-text {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    width: 90%;
-    color: white;
-}
-
-.vision-text h2 {
-    font-size: 2rem;
-}
-
-.vision-btn {
-    margin-top: 1rem;
-    background: #c78c06;
-    padding: 0.7rem 1.3rem;
-    display: inline-block;
-}
-
-/* ============================================
-   TEAM SECTION
-=============================================== */
-
-.team-section {
-    padding: 2rem 1rem;
-}
-
-.team-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.team-card {
-    background: #ffe6ac;
-    padding: 1rem;
-}
-
-.team-card img {
     width: 100%;
+    overflow: hidden;
 }
 
-/* ============================================
-   CONTACT SECTION
-=============================================== */
-
-.contact-section {
-    padding: 2rem 1rem;
-}
-
-.contact-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.contact-section form input,
-.contact-section form textarea {
+.hero-image-wrapper img {
     width: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    height: 600px;
+    object-fit: cover;
 }
 
-.contact-section button {
-    background: #222;
-    color: white;
-    padding: 0.7rem 1rem;
-    border: none;
-}
-
-.hours-table table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.hours-table th,
-.hours-table td {
-    border: 1px solid #ccc;
-    padding: 0.8rem;
-}
-
-.hours-table th {
-    background: #ffe6ac;
-}
-
-/* ============================================
-   FOOTER
-=============================================== */
-
-footer {
-    background: #222;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: left;
-}
-
-/* ============================================
-   MEDIA QUERY 760px+
-=============================================== */
-
-@media (min-width: 760px) {
-
-    /* Header */
-    .header-inner {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .main-nav ul {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    /* About Grid */
-    .about-grid {
-        flex-direction: row;
-    }
-
-    /* Services Grid */
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* Team Grid */
-    .team-grid {
-        flex-direction: row;
-    }
-
-    /* Contact Grid */
-    .contact-grid {
-        flex-direction: row;
-    }
-}
-/* HERO SECTION */
-.hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
+/* Overlay content */
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.6);
-  padding: 2rem;
-  max-width: 900px;
-  width: 90%;
-  color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    max-width: 900px;
+    width: 90%;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.btn-primary {
-  background: #c78c06;
-  color: black;
-  padding: 1rem 2rem;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
+/* Button */
+.button-primary {
+    background: #c78c06;
+    padding: 1rem 2rem;
+    color: #222;
+    font-weight: bold;
+    display: inline-block;
 }
-
