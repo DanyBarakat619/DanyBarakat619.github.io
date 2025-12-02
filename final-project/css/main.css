@@ -253,8 +253,14 @@ p {
 }
 
 .service-card .card-body {
-  padding: 20px;
+  padding: 20px;  
 }
+
+.service-card h3 {
+  font-size: 1.6rem;     /* bigger title like the mockup */
+  margin-bottom: 0.75rem;
+}
+
 
 
 /* =========================================================
