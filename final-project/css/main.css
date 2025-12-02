@@ -537,6 +537,14 @@ p {
     margin-bottom: 20px;    /* spacing under title */
 }
 
+     /* FORCE all section titles to match mockup size */
+h2 {
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+    line-height: 1.1 !important;
+}
+
 
 
      
