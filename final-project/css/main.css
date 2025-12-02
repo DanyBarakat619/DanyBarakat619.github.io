@@ -266,6 +266,27 @@ p {
   margin-bottom: 0.75rem;
 }
 
+/* full-width black bar button with arrow */
+.services-section .btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+}
+
+/* white arrow on the right side */
+.services-section .btn-secondary::after {
+  content: " ▶";
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
 
 
 /* =========================================================
