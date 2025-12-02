@@ -352,6 +352,13 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Vision section button arrow */
+.vision-section .btn-primary::after {
+    content: " ▶";     /* same arrow */
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+
 /* =========================================================
    TEAM
    ========================================================= */
