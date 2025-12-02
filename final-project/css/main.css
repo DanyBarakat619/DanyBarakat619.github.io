@@ -517,6 +517,15 @@ p {
   margin-left: 0.35em;
 }
 
+     .btn-primary .arrow {
+  font-size: 1.3rem;
+  margin-left: 12px;
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(1px); /* aligns perfectly like the mockup */
+}
+
+
      
   }
 }
