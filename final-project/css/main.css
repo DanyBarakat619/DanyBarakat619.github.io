@@ -525,6 +525,19 @@ p {
   transform: translateY(1px); /* aligns perfectly like the mockup */
 }
 
+     /* Bigger section titles like the mockup */
+.section h2,
+.about-section h2,
+.services-section h2,
+.team-section h2,
+.contact-section h2,
+.hours-section h2 {
+    font-size: 3.2rem;      /* big like the mockup */
+    font-weight: 700;       /* bold */
+    margin-bottom: 20px;    /* spacing under title */
+}
+
+
 
      
   }
