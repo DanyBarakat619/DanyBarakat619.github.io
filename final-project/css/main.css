@@ -359,92 +359,66 @@ p {
     margin-left: 8px;
 }
 
-/* =========================================================
-   TEAM
-   ========================================================= */
+/* ================= TEAM SECTION (MATCH MOCKUP) ================= */
+
+.team-section {
+  background: #f7d895;          /* yellow background instead of white */
+  padding: 40px 0 60px;
+}
 
 .team-section h2 {
-  margin-bottom: 2rem;
+  font-size: 3rem;              /* big "Our Team" */
+  margin-bottom: 30px;
 }
 
-.team-grid {
+/* 2x2 GRID LAYOUT */
+.team-layout {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: 1.1fr 1fr;  /* left a bit wider like mockup */
+  grid-template-rows: auto auto;
+  gap: 0;
 }
 
-.team-card {
-  background: #ffffff;
-}
+/* GRID AREAS (who sits where) */
+.john-photo  { grid-column: 1 / 2; grid-row: 1 / 2; }
+.john-card   { grid-column: 2 / 3; grid-row: 1 / 2; }
+.bob-card    { grid-column: 1 / 2; grid-row: 2 / 3; }
+.bob-photo   { grid-column: 2 / 3; grid-row: 2 / 3; }
 
-.team-card img {
+/* PHOTOS – make them touch and same height */
+.team-photo img {
   width: 100%;
-  max-height: 400px;
+  height: 380px;                /* tweak up/down if you want */
   object-fit: cover;
+  display: block;
 }
 
-.team-card .card-body {
-  padding: 1.5rem 0;
+/* TEXT CARDS */
+.team-card {
+  background: #f7d895;
+  padding: 30px 40px;
 }
 
+/* NAMES – big + bold */
+.team-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* ROLE WITH ORANGE LINE UNDER IT */
 .team-role {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #d39e0b;   /* orange line */
 }
 
-/* =========================================================
-   CONTACT
-   ========================================================= */
-
-.contact-section h2 {
-  margin-bottom: 2rem;
+/* BODY TEXT */
+.team-card p {
+  line-height: 1.6;
+  max-width: 600px;
 }
 
-.contact-grid {
-  display: grid;
-  gap: 2rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.5rem;
-  border: 1px solid #cccccc;
-}
-
-.map-wrap iframe {
-  width: 100%;
-  min-height: 350px;
-  border: 0;
-}
-
-/* =========================================================
-   HOURS TABLE
-   ========================================================= */
-
-.hours-section h2 {
-  margin-bottom: 1.5rem;
-}
-
-.hours-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.hours-table th,
-.hours-table td {
-  border: 1px solid #cccccc;
-  padding: 0.75rem 1rem;
-}
-
-.hours-table thead th {
-  background: #ffe6ac;
-  text-align: left;
-}
 
 /* =========================================================
    FOOTER
