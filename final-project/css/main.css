@@ -748,6 +748,68 @@ h2 {
   font-size: 0.9em;
 }
 
+     /* ================= TEAM SECTION ================= */
+
+.team-section {
+  background: #f7d895;      /* yellow background like mockup */
+  padding: 40px 0;
+}
+
+.team-section h2 {
+  margin-bottom: 30px;
+  font-size: 3rem;           /* big title */
+}
+
+/* GRID FOR TEAM */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;                    /* so images touch */
+  width: 90%;
+  margin: auto;
+}
+
+/* TEAM CARD */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  background: #f7d895;
+}
+
+/* IMAGE ALWAYS FULL WIDTH */
+.team-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXT AREA */
+.team-card .card-body {
+  padding: 30px;
+}
+
+/* NAME STYLE — BIG LIKE MOCKUP */
+.team-card h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* ROLE (CEO / CFO) */
+.team-role {
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #d39e0b;   /* orange line 🔥 */
+}
+
+/* PARAGRAPH */
+.team-card p {
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
 
   }
 }
