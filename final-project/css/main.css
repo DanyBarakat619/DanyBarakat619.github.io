@@ -223,28 +223,33 @@ p {
   margin-bottom: 2rem;
 }
 
-/* ===== OUR SERVICES GRID ===== */
+/* ========= OUR SERVICES LAYOUT ========= */
 .services-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;   /* centers the row */
+  justify-content: center;     /* center whole group */
   margin-top: 24px;
 }
 
-/* base card */
+/* all cards */
 .service-card {
   background-color: #f7d895;
-  max-width: 360px;
-  flex: 0 1 calc(33.333% - 24px); /* second row: 3 cards */
   display: flex;
   flex-direction: column;
 }
 
-/* FIRST TWO ONLY – make them wider so it looks like the mockup */
+/* TOP ROW – first two cards, wide (50%) */
 .service-card:nth-child(1),
 .service-card:nth-child(2) {
-  flex: 0 1 calc(50% - 24px);   /* row of 2, centered */
+  flex: 0 1 calc(50% - 24px);
+}
+
+/* SECOND ROW – last three cards, 33% each */
+.service-card:nth-child(3),
+.service-card:nth-child(4),
+.service-card:nth-child(5) {
+  flex: 0 1 calc(33.333% - 24px);
 }
 
 .service-card img {
@@ -253,7 +258,7 @@ p {
 }
 
 .service-card .card-body {
-  padding: 20px;  
+  padding: 20px;
 }
 
 .service-card h3 {
