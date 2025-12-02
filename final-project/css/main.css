@@ -590,6 +590,30 @@ h2 {
   border-left: 10px solid #ffffff; /* white triangle arrow */
 }
 
+   /* ==== SERVICES LAYOUT ==== */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-spacer {
+  display: none;
+}
+
+/* desktop: 3 columns, spacer + 2 cards on top, 3 cards bottom */
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-spacer {
+    display: block;
+  }
+}
+
+
 }
 
   }
