@@ -563,6 +563,35 @@ h2 {
 
   .service-spacer {
     display: block;
+     /* bigger titles inside service cards */
+.service-card h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+   /* dark buttons with arrow (Digital Plans, etc.) */
+.btn.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: #222;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  border: none;
+}
+
+.btn.btn-secondary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #ffffff; /* white triangle arrow */
+}
+
+}
+
   }
 }
 
