@@ -878,6 +878,271 @@ h2 {
   width: 50%;
 }
 
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services-section {
+  background: #ffffff;
+}
+
+.services-section h2 {
+  margin-bottom: 2rem;
+}
+
+/* === OUR SERVICES 2+3 LAYOUT (GRID) === */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Base service card styling */
+.services-grid .service-card {
+  background-color: #f7d895;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Force all images same height so "Print" isn't huge */
+.services-grid .service-card img {
+  width: 100%;
+  height: 260px;          /* tweak if you want */
+  object-fit: cover;
+  display: block;
+}
+
+/* Card placements: 2 on top (centered), 3 on bottom */
+.services-grid .service-card:nth-child(1) {
+  grid-column: 1 / 2;     /* top-left */
+}
+
+.services-grid .service-card:nth-child(2) {
+  grid-column: 2 / 3;     /* top-middle */
+}
+
+.services-grid .service-card:nth-child(3) {
+  grid-column: 1 / 2;     /* bottom-left */
+}
+
+.services-grid .service-card:nth-child(4) {
+  grid-column: 2 / 3;     /* bottom-middle */
+}
+
+.services-grid .service-card:nth-child(5) {
+  grid-column: 3 / 4;     /* bottom-right ("Print") */
+}
+
+/* service titles */
+.service-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+/* full-width black bar button with arrow */
+.services-section .btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border: none;
+}
+
+/* white arrow on the right side */
+.services-section .btn-secondary::after {
+  content: " ▶";
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+/* =========================================================
+   VISION BUTTON ARROW (same as Connect with us)
+   ========================================================= */
+
+/* applies arrow to BOTH hero and vision primary buttons */
+.hero .btn-primary::after,
+.vision-section .btn-primary::after {
+  content: " ▶";
+  margin-left: 8px;
+}
+
+/* =========================================================
+   TEAM SECTION (match mockup)
+   ========================================================= */
+
+.team-section {
+  background: #ffffff;
+}
+
+.team-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* 2x2 grid:
+   row1: John image | John text
+   row2: Bob  text  | Bob image
+*/
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 24px;
+}
+
+/* let the children of each card sit directly in the grid */
+.team-card {
+  display: contents;
+}
+
+/* images fill their grid cell */
+.team-card img {
+  width: 100%;
+  display: block;
+}
+
+/* yellow background blocks for text */
+.team-card .card-body {
+  background: #f7d895;
+  padding: 32px;
+}
+
+/* place John card pieces */
+.team-card:nth-of-type(1) img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.team-card:nth-of-type(1) .card-body {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* place Bob card pieces */
+.team-card:nth-of-type(2) img {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.team-card:nth-of-type(2) .card-body {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+/* name + role styles */
+.team-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.team-role {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #c69200; /* orange line */
+}
+
+/* =========================================================
+   CONTACT SECTION (form + map)
+   ========================================================= */
+
+.contact-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* 2-column layout: form (wider) + map */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+  margin-top: 8px;
+}
+
+/* form fills left column */
+.contact-form {
+  width: 100%;
+}
+
+/* labels stacked above inputs */
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+/* full-width inputs + textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
+
+/* Send button – black bar like mockup */
+.contact-form button {
+  display: inline-block;
+  padding: 10px 26px;
+  background: #111;
+  color: #f7d895;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* map fills right column */
+.map-wrap iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+}
+
+/* =========================================================
+   HOURS OF OPERATION TABLE
+   ========================================================= */
+
+.hours-section h2 {
+  margin-top: 60px;
+  margin-bottom: 18px;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.hours-table th,
+.hours-table td {
+  border: 1px solid #d3c48b;
+  padding: 12px 18px;
+}
+
+.hours-table thead th {
+  background: #f7d895;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* column widths */
+.hours-table tbody td:nth-child(1) {
+  width: 50%;
+}
+
+.hours-table tbody td:nth-child(2) {
+  width: 50%;
+}
 
 
 
