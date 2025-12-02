@@ -544,7 +544,27 @@ h2 {
     margin-bottom: 20px !important;
     line-height: 1.1 !important;
 }
+/* ==== SERVICES LAYOUT: 2 ON TOP, 3 UNDER ==== */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
+.service-spacer {
+  display: none;
+}
+
+/* desktop */
+@media (min-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-spacer {
+    display: block;
+  }
+}
 
 
      
