@@ -613,6 +613,14 @@ h2 {
   }
 }
 
+   /* bigger titles on service cards */
+.service-card h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+
 
 }
 
